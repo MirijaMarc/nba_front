@@ -268,10 +268,10 @@ function ListeJoueurs(){
                 <th scope="col">Equipe</th>
                 <th scope="col">Matchs Joués</th>
                 <th scope="col">Moyenne Minutes Jouées par Match</th>
-                <th scope="col">Moyenne Points Par Match</th>
                 <th scope="col">Total 3 points</th>
                 <th scope="col">Moyenne Rebonds</th> 
                 <th scope="col">Moyenne Passes Décisives</th> 
+                <th scope="col">Moyenne Points Par Match</th>
             </tr>
             </thead>
             <tbody>
@@ -282,10 +282,10 @@ function ListeJoueurs(){
                     <td>{joueur.joueur.equipe.nom}</td>
                     <td>{joueur.match_joues}</td>
                     <td>{joueur.moyenne_minutes_jouees.toFixed(1)}</td>
-                    <td>{joueur.moyenne_points.toFixed(1)}</td>
                     <td>{joueur.total_trois_points}</td>
                     <td>{joueur.moyenne_rebonds.toFixed(1)}</td> 
                     <td>{joueur.moyenne_passes_decisives.toFixed(1)}</td> 
+                    <td>{joueur.moyenne_points.toFixed(1)}</td>
                 </tr> 
             ))}
             
