@@ -2,32 +2,30 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import ListeJoueurs from './components/ListeJoueurs'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      {/* <header>
+          <nav className="navbar bg-body-tertiary" style="background-color: #ededed40;">
+                  <div className="container-fluid">
+                  <a className="navbar-brand" href="./etat">
+                      <div className="d-flex align-items-center">
+                          <img src="./assets/img/stock.svg" alt="Logo" width="50" height="44" className="d-inline-block align-text-top" />
+                              &nbsp;NBA
+                      </div>
+                  </a>
+                  
+                  </div>
+          </nav>
+      </header> */}
+      <div className='container mt-3'>
+        <div className="row">
+          <ListeJoueurs />
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
