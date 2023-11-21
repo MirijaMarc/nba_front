@@ -281,11 +281,11 @@ function ListeJoueurs(){
                     <td>{joueur.joueur.nom}</td>
                     <td>{joueur.joueur.equipe.nom}</td>
                     <td>{joueur.match_joues}</td>
-                    <td>{joueur.moyenne_minutes_jouees}</td>
-                    <td>{joueur.moyenne_points}</td>
+                    <td>{joueur.moyenne_minutes_jouees.toFixed(1)}</td>
+                    <td>{joueur.moyenne_points.toFixed(1)}</td>
                     <td>{joueur.total_trois_points}</td>
-                    <td>{joueur.moyenne_rebonds}</td> 
-                    <td>{joueur.moyenne_passes_decisives}</td> 
+                    <td>{joueur.moyenne_rebonds.toFixed(1)}</td> 
+                    <td>{joueur.moyenne_passes_decisives.toFixed(1)}</td> 
                 </tr> 
             ))}
             
